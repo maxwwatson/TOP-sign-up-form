@@ -9,8 +9,54 @@
 </head>
 <body>
 
+    <div class="page-container">
+        <!-- left side img -->
+        <div class="img-container">
+            <div class="img-sidebar">
+                <div class="sidebar-bg">
+                    <div class="logo-container"><img src="images/odin-lined.png" class="logo" alt="The logo for the site"></div>
+                    <h1 class="name">Odin</h1>
+                </div>
+            </div>
+        </div>
+        <!-- right side content-->
+        <div class="content-container">
+            <div>
+                <h2>A bunch of crazy CTA text</h2>
+                <p>More CTA text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta molestias quas laborum excepturi quis vel accusamus impedit veniam nisi ut, beatae nemo similique, itaque ducimus nihil earum quia accusantium?</p>
+            </div>
+            <div class="form-container">
+                <form action="" method="post">
+                    <!-- Could put this all in a fieldset-->
+                   <h2>Let's do this!</h2> 
+                   <div class="input-container">
+                        <div class="form-left">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="password" >Password</label>
+                            <input type="password" id="password" name="password" required >
+                        </div>
+                        <div class="form-right">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="phone-number" max="11" min="10">Phone Number</label>
+                            <input type="number" id="phone-number" name="phone-number" required>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                   </div>
+                </form>
+            </div>
+            <div class="create-account">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? Log in</p>
+            </div>
+        </div>
+    </div>
 
-    
+
     <!-- 
     <div class="container">
         <p>You're now viewing this example with the <span class="theme-name">dark</span> theme!</p>
