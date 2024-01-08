@@ -1,12 +1,18 @@
 :root {
-    --color-text: black;
+    --color-text: rgb(57, 57, 57);
+    --color-input-valid: rgb(5, 111, 25);
+    --color-input-invalid: rgb(255, 0, 0);
+    --color-create-account: rgb(0, 30, 255);
 
 }
+
+/* Add some kind of font, and a normalise css */
 
 html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    color: var(--color-text);
 }
 
 body {
@@ -17,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* left side */
     .img-container {
         min-width: 300px;
         background-color: rgb(101, 164, 219);
@@ -43,20 +50,23 @@ body {
                 color: white;
             }
         }
-    }
+    } 
+    /* right side  */
     .content-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 500px;
-        min-width: 500px;
-        margin: 30px;
+
         .form-container {
-            border: 1px solid black;
+            box-shadow: ; /* fill in a shadow */
             width: 100%;
             padding: 20px;
         }
     }
+}
+input, button {
+    border-radius: 5px;
 }
 input:valid {
     border: 1px solid green;
@@ -70,6 +80,7 @@ input:invalid {
 }
 .input-container {
     display: flex;
+    flex-wrap:wrap;
     
 }
 .form-left, .form-right {
@@ -77,9 +88,18 @@ input:invalid {
     flex-direction: column;
     padding: 10px;
     margin: 10px;
+    margin-left: 0px;
 }
 
 .create-account {
     padding-top: 10px;
+    margin: 0px 20px 0px 20px;
 }
 
+h2 {
+    padding: 0;
+    margin: 0;
+}
+.content-text {
+    margin: 0px 20px 0px 20px;
+}
